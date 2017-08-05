@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C237A5271F35D868001CBECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5261F35D868001CBECB /* main.m */; };
+		C237A52A1F35D868001CBECB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5291F35D868001CBECB /* AppDelegate.m */; };
+		C237A52D1F35D868001CBECB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A52C1F35D868001CBECB /* ViewController.m */; };
+		C237A5301F35D868001CBECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C237A52E1F35D868001CBECB /* Main.storyboard */; };
+		C237A5321F35D868001CBECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C237A5311F35D868001CBECB /* Assets.xcassets */; };
+		C237A5351F35D868001CBECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C237A5331F35D868001CBECB /* LaunchScreen.storyboard */; };
+		C237A5401F35D868001CBECB /* TravelMateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A53F1F35D868001CBECB /* TravelMateTests.m */; };
+		C237A54B1F35D868001CBECB /* TravelMateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A54A1F35D868001CBECB /* TravelMateUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C237A53C1F35D868001CBECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C237A51A1F35D868001CBECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C237A5211F35D868001CBECB;
+			remoteInfo = TravelMate;
+		};
+		C237A5471F35D868001CBECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C237A51A1F35D868001CBECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C237A5211F35D868001CBECB;
+			remoteInfo = TravelMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C237A5221F35D868001CBECB /* TravelMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C237A5261F35D868001CBECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C237A5281F35D868001CBECB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C237A5291F35D868001CBECB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C237A52B1F35D868001CBECB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C237A52C1F35D868001CBECB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C237A52F1F35D868001CBECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C237A5311F35D868001CBECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C237A5341F35D868001CBECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C237A5361F35D868001CBECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C237A53B1F35D868001CBECB /* TravelMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C237A53F1F35D868001CBECB /* TravelMateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelMateTests.m; sourceTree = "<group>"; };
+		C237A5411F35D868001CBECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C237A5461F35D868001CBECB /* TravelMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C237A54A1F35D868001CBECB /* TravelMateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelMateUITests.m; sourceTree = "<group>"; };
+		C237A54C1F35D868001CBECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C237A51F1F35D868001CBECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237A5381F35D868001CBECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237A5431F35D868001CBECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C237A5191F35D868001CBECB = {
+			isa = PBXGroup;
+			children = (
+				C237A5241F35D868001CBECB /* TravelMate */,
+				C237A53E1F35D868001CBECB /* TravelMateTests */,
+				C237A5491F35D868001CBECB /* TravelMateUITests */,
+				C237A5231F35D868001CBECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C237A5231F35D868001CBECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5221F35D868001CBECB /* TravelMate.app */,
+				C237A53B1F35D868001CBECB /* TravelMateTests.xctest */,
+				C237A5461F35D868001CBECB /* TravelMateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C237A5241F35D868001CBECB /* TravelMate */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5281F35D868001CBECB /* AppDelegate.h */,
+				C237A5291F35D868001CBECB /* AppDelegate.m */,
+				C237A52B1F35D868001CBECB /* ViewController.h */,
+				C237A52C1F35D868001CBECB /* ViewController.m */,
+				C237A52E1F35D868001CBECB /* Main.storyboard */,
+				C237A5311F35D868001CBECB /* Assets.xcassets */,
+				C237A5331F35D868001CBECB /* LaunchScreen.storyboard */,
+				C237A5361F35D868001CBECB /* Info.plist */,
+				C237A5251F35D868001CBECB /* Supporting Files */,
+			);
+			path = TravelMate;
+			sourceTree = "<group>";
+		};
+		C237A5251F35D868001CBECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5261F35D868001CBECB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C237A53E1F35D868001CBECB /* TravelMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				C237A53F1F35D868001CBECB /* TravelMateTests.m */,
+				C237A5411F35D868001CBECB /* Info.plist */,
+			);
+			path = TravelMateTests;
+			sourceTree = "<group>";
+		};
+		C237A5491F35D868001CBECB /* TravelMateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C237A54A1F35D868001CBECB /* TravelMateUITests.m */,
+				C237A54C1F35D868001CBECB /* Info.plist */,
+			);
+			path = TravelMateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C237A5211F35D868001CBECB /* TravelMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C237A54F1F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMate" */;
+			buildPhases = (
+				C237A51E1F35D868001CBECB /* Sources */,
+				C237A51F1F35D868001CBECB /* Frameworks */,
+				C237A5201F35D868001CBECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelMate;
+			productName = TravelMate;
+			productReference = C237A5221F35D868001CBECB /* TravelMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C237A53A1F35D868001CBECB /* TravelMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C237A5521F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateTests" */;
+			buildPhases = (
+				C237A5371F35D868001CBECB /* Sources */,
+				C237A5381F35D868001CBECB /* Frameworks */,
+				C237A5391F35D868001CBECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C237A53D1F35D868001CBECB /* PBXTargetDependency */,
+			);
+			name = TravelMateTests;
+			productName = TravelMateTests;
+			productReference = C237A53B1F35D868001CBECB /* TravelMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C237A5451F35D868001CBECB /* TravelMateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C237A5551F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateUITests" */;
+			buildPhases = (
+				C237A5421F35D868001CBECB /* Sources */,
+				C237A5431F35D868001CBECB /* Frameworks */,
+				C237A5441F35D868001CBECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C237A5481F35D868001CBECB /* PBXTargetDependency */,
+			);
+			name = TravelMateUITests;
+			productName = TravelMateUITests;
+			productReference = C237A5461F35D868001CBECB /* TravelMateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C237A51A1F35D868001CBECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Gaurav Rastogi";
+				TargetAttributes = {
+					C237A5211F35D868001CBECB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M37JW29G64;
+						ProvisioningStyle = Automatic;
+					};
+					C237A53A1F35D868001CBECB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M37JW29G64;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C237A5211F35D868001CBECB;
+					};
+					C237A5451F35D868001CBECB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M37JW29G64;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C237A5211F35D868001CBECB;
+					};
+				};
+			};
+			buildConfigurationList = C237A51D1F35D868001CBECB /* Build configuration list for PBXProject "TravelMate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C237A5191F35D868001CBECB;
+			productRefGroup = C237A5231F35D868001CBECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C237A5211F35D868001CBECB /* TravelMate */,
+				C237A53A1F35D868001CBECB /* TravelMateTests */,
+				C237A5451F35D868001CBECB /* TravelMateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C237A5201F35D868001CBECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237A5351F35D868001CBECB /* LaunchScreen.storyboard in Resources */,
+				C237A5321F35D868001CBECB /* Assets.xcassets in Resources */,
+				C237A5301F35D868001CBECB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237A5391F35D868001CBECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237A5441F35D868001CBECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C237A51E1F35D868001CBECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237A52D1F35D868001CBECB /* ViewController.m in Sources */,
+				C237A52A1F35D868001CBECB /* AppDelegate.m in Sources */,
+				C237A5271F35D868001CBECB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237A5371F35D868001CBECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237A5401F35D868001CBECB /* TravelMateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C237A5421F35D868001CBECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C237A54B1F35D868001CBECB /* TravelMateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C237A53D1F35D868001CBECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C237A5211F35D868001CBECB /* TravelMate */;
+			targetProxy = C237A53C1F35D868001CBECB /* PBXContainerItemProxy */;
+		};
+		C237A5481F35D868001CBECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C237A5211F35D868001CBECB /* TravelMate */;
+			targetProxy = C237A5471F35D868001CBECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C237A52E1F35D868001CBECB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C237A52F1F35D868001CBECB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C237A5331F35D868001CBECB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C237A5341F35D868001CBECB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C237A54D1F35D868001CBECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C237A54E1F35D868001CBECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C237A5501F35D868001CBECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M37JW29G64;
+				INFOPLIST_FILE = TravelMate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C237A5511F35D868001CBECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M37JW29G64;
+				INFOPLIST_FILE = TravelMate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C237A5531F35D868001CBECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M37JW29G64;
+				INFOPLIST_FILE = TravelMateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelMate.app/TravelMate";
+			};
+			name = Debug;
+		};
+		C237A5541F35D868001CBECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M37JW29G64;
+				INFOPLIST_FILE = TravelMateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelMate.app/TravelMate";
+			};
+			name = Release;
+		};
+		C237A5561F35D868001CBECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M37JW29G64;
+				INFOPLIST_FILE = TravelMateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravelMate;
+			};
+			name = Debug;
+		};
+		C237A5571F35D868001CBECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M37JW29G64;
+				INFOPLIST_FILE = TravelMateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravelMate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C237A51D1F35D868001CBECB /* Build configuration list for PBXProject "TravelMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C237A54D1F35D868001CBECB /* Debug */,
+				C237A54E1F35D868001CBECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C237A54F1F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C237A5501F35D868001CBECB /* Debug */,
+				C237A5511F35D868001CBECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C237A5521F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C237A5531F35D868001CBECB /* Debug */,
+				C237A5541F35D868001CBECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C237A5551F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C237A5561F35D868001CBECB /* Debug */,
+				C237A5571F35D868001CBECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C237A51A1F35D868001CBECB /* Project object */;
+}
