@@ -7,14 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38DFFBADAAAE773E2F09F4EB /* libPods-TravelMate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B984335C498FD842919386D8 /* libPods-TravelMate.a */; };
+		8D940251454FBCDE43EABDA5 /* libPods-TravelMateUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0FDF34D8B8BB85D34A7531 /* libPods-TravelMateUITests.a */; };
 		C237A5271F35D868001CBECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5261F35D868001CBECB /* main.m */; };
 		C237A52A1F35D868001CBECB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5291F35D868001CBECB /* AppDelegate.m */; };
-		C237A52D1F35D868001CBECB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A52C1F35D868001CBECB /* ViewController.m */; };
 		C237A5301F35D868001CBECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C237A52E1F35D868001CBECB /* Main.storyboard */; };
 		C237A5321F35D868001CBECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C237A5311F35D868001CBECB /* Assets.xcassets */; };
 		C237A5351F35D868001CBECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C237A5331F35D868001CBECB /* LaunchScreen.storyboard */; };
 		C237A5401F35D868001CBECB /* TravelMateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A53F1F35D868001CBECB /* TravelMateTests.m */; };
 		C237A54B1F35D868001CBECB /* TravelMateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A54A1F35D868001CBECB /* TravelMateUITests.m */; };
+		C237A5681F35F8D4001CBECB /* TrainsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5671F35F8D4001CBECB /* TrainsRepositoryTest.swift */; };
+		C237A56C1F35FA5A001CBECB /* TrainsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A56B1F35FA5A001CBECB /* TrainsRepository.m */; };
+		C237A56F1F35FB2C001CBECB /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A56E1F35FB2C001CBECB /* City.m */; };
+		C237A5711F3603F2001CBECB /* FlightsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5701F3603F2001CBECB /* FlightsRepositoryTest.swift */; };
+		C237A5741F3604E9001CBECB /* FlightsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5731F3604E9001CBECB /* FlightsRepository.m */; };
+		C237A5761F360585001CBECB /* BusesRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5751F360585001CBECB /* BusesRepositoryTest.swift */; };
+		C237A5791F3605E0001CBECB /* BusesRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5781F3605E0001CBECB /* BusesRepository.m */; };
+		C237A5811F360823001CBECB /* DisplayFlightsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5801F360823001CBECB /* DisplayFlightsTest.swift */; };
+		C237A5841F360A3D001CBECB /* DisplayFlights.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5831F360A3D001CBECB /* DisplayFlights.m */; };
+		C237A5871F361149001CBECB /* DisplayBusesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5861F361149001CBECB /* DisplayBusesTest.swift */; };
+		C237A58A1F362533001CBECB /* DisplayBuses.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5891F362533001CBECB /* DisplayBuses.m */; };
+		C237A58E1F36255E001CBECB /* DisplayTrains.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A58D1F36255E001CBECB /* DisplayTrains.m */; };
+		C237A5911F36287A001CBECB /* DisplayTrainsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5901F36287A001CBECB /* DisplayTrainsTest.swift */; };
+		C237A5931F3629E6001CBECB /* CityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5921F3629E6001CBECB /* CityTest.swift */; };
+		C237A5971F362B5F001CBECB /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5961F362B5F001CBECB /* NetworkManager.m */; };
+		C237A59A1F36433C001CBECB /* AllTransportListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5991F36433C001CBECB /* AllTransportListViewController.m */; };
+		C237A59D1F364376001CBECB /* AllTransportListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A59C1F364376001CBECB /* AllTransportListViewModel.m */; };
+		C237A5AB1F364713001CBECB /* TrainsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5AA1F364713001CBECB /* TrainsListViewModel.m */; };
+		C237A5AE1F364727001CBECB /* BusesListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5AD1F364727001CBECB /* BusesListViewModel.m */; };
+		C237A5B11F364743001CBECB /* FlightsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5B01F364743001CBECB /* FlightsListViewModel.m */; };
+		C237A5B41F3649A1001CBECB /* TrainsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5B31F3649A1001CBECB /* TrainsListViewController.m */; };
+		C237A5B71F3649B2001CBECB /* BusesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5B61F3649B2001CBECB /* BusesListViewController.m */; };
+		C237A5BA1F364B72001CBECB /* FlightsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5B91F364B72001CBECB /* FlightsListViewController.m */; };
+		C237A5BD1F364E94001CBECB /* Transport.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5BC1F364E94001CBECB /* Transport.m */; };
+		C237A5C41F370BE1001CBECB /* TransportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237A5C31F370BE1001CBECB /* TransportTest.swift */; };
+		C23DA5C61F386BFC00027D17 /* EmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C23DA5C51F386BFC00027D17 /* EmptySegue.m */; };
+		C23DA5C91F386C3600027D17 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23DA5C81F386C3600027D17 /* ContainerViewController.m */; };
+		C272E48B1F37901400858B6B /* TransportCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C272E48A1F37901400858B6B /* TransportCustomTableViewCell.m */; };
+		FCB2B94D8247FC1C8D143601 /* libPods-TravelMateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FF42496F36D4E4355921AF /* libPods-TravelMateTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +65,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03FF42496F36D4E4355921AF /* libPods-TravelMateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelMateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E04A01FC0B23D9CA661C58 /* Pods-TravelMateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMateTests/Pods-TravelMateTests.release.xcconfig"; sourceTree = "<group>"; };
+		35E23AF32C29E2A2B0A0F197 /* Pods-TravelMateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMateUITests/Pods-TravelMateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ECE6A7A7E6E05D2BA6CD00E /* Pods-TravelMateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMateTests/Pods-TravelMateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DB0FF5778DF5103EE4C4F2D /* Pods-TravelMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMate/Pods-TravelMate.debug.xcconfig"; sourceTree = "<group>"; };
+		9CBD41CD494441E17396B2B8 /* Pods-TravelMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMate.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMate/Pods-TravelMate.release.xcconfig"; sourceTree = "<group>"; };
+		B984335C498FD842919386D8 /* libPods-TravelMate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelMate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C237A5221F35D868001CBECB /* TravelMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C237A5261F35D868001CBECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C237A5281F35D868001CBECB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C237A5291F35D868001CBECB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C237A52B1F35D868001CBECB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C237A52C1F35D868001CBECB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C237A52F1F35D868001CBECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C237A5311F35D868001CBECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C237A5341F35D868001CBECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +86,64 @@
 		C237A5461F35D868001CBECB /* TravelMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C237A54A1F35D868001CBECB /* TravelMateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelMateUITests.m; sourceTree = "<group>"; };
 		C237A54C1F35D868001CBECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C237A5661F35F8D3001CBECB /* TravelMateTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelMateTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C237A5671F35F8D4001CBECB /* TrainsRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainsRepositoryTest.swift; sourceTree = "<group>"; };
+		C237A56A1F35FA5A001CBECB /* TrainsRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainsRepository.h; sourceTree = "<group>"; };
+		C237A56B1F35FA5A001CBECB /* TrainsRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainsRepository.m; sourceTree = "<group>"; };
+		C237A56D1F35FB2C001CBECB /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		C237A56E1F35FB2C001CBECB /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		C237A5701F3603F2001CBECB /* FlightsRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsRepositoryTest.swift; sourceTree = "<group>"; };
+		C237A5721F3604E9001CBECB /* FlightsRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsRepository.h; sourceTree = "<group>"; };
+		C237A5731F3604E9001CBECB /* FlightsRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsRepository.m; sourceTree = "<group>"; };
+		C237A5751F360585001CBECB /* BusesRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusesRepositoryTest.swift; sourceTree = "<group>"; };
+		C237A5771F3605E0001CBECB /* BusesRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusesRepository.h; sourceTree = "<group>"; };
+		C237A5781F3605E0001CBECB /* BusesRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusesRepository.m; sourceTree = "<group>"; };
+		C237A57D1F360653001CBECB /* TrainsRepositoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainsRepositoryProtocol.h; sourceTree = "<group>"; };
+		C237A57E1F3606C1001CBECB /* FlightsRepositoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsRepositoryProtocol.h; sourceTree = "<group>"; };
+		C237A57F1F3606D9001CBECB /* BusesRepositoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusesRepositoryProtocol.h; sourceTree = "<group>"; };
+		C237A5801F360823001CBECB /* DisplayFlightsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayFlightsTest.swift; sourceTree = "<group>"; };
+		C237A5821F360A3D001CBECB /* DisplayFlights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayFlights.h; sourceTree = "<group>"; };
+		C237A5831F360A3D001CBECB /* DisplayFlights.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayFlights.m; sourceTree = "<group>"; };
+		C237A5851F360A54001CBECB /* DisplayFlightsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayFlightsProtocol.h; sourceTree = "<group>"; };
+		C237A5861F361149001CBECB /* DisplayBusesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayBusesTest.swift; sourceTree = "<group>"; };
+		C237A5881F362533001CBECB /* DisplayBuses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayBuses.h; sourceTree = "<group>"; };
+		C237A5891F362533001CBECB /* DisplayBuses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayBuses.m; sourceTree = "<group>"; };
+		C237A58B1F362547001CBECB /* DisplayBusesProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayBusesProtocol.h; sourceTree = "<group>"; };
+		C237A58C1F36255E001CBECB /* DisplayTrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayTrains.h; sourceTree = "<group>"; };
+		C237A58D1F36255E001CBECB /* DisplayTrains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayTrains.m; sourceTree = "<group>"; };
+		C237A58F1F362573001CBECB /* DisplayTrainsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayTrainsProtocol.h; sourceTree = "<group>"; };
+		C237A5901F36287A001CBECB /* DisplayTrainsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayTrainsTest.swift; sourceTree = "<group>"; };
+		C237A5921F3629E6001CBECB /* CityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTest.swift; sourceTree = "<group>"; };
+		C237A5951F362B5F001CBECB /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		C237A5961F362B5F001CBECB /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		C237A5981F36433C001CBECB /* AllTransportListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTransportListViewController.h; sourceTree = "<group>"; };
+		C237A5991F36433C001CBECB /* AllTransportListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTransportListViewController.m; sourceTree = "<group>"; };
+		C237A59B1F364376001CBECB /* AllTransportListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTransportListViewModel.h; sourceTree = "<group>"; };
+		C237A59C1F364376001CBECB /* AllTransportListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTransportListViewModel.m; sourceTree = "<group>"; };
+		C237A5A91F364713001CBECB /* TrainsListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainsListViewModel.h; sourceTree = "<group>"; };
+		C237A5AA1F364713001CBECB /* TrainsListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainsListViewModel.m; sourceTree = "<group>"; };
+		C237A5AC1F364727001CBECB /* BusesListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusesListViewModel.h; sourceTree = "<group>"; };
+		C237A5AD1F364727001CBECB /* BusesListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusesListViewModel.m; sourceTree = "<group>"; };
+		C237A5AF1F364743001CBECB /* FlightsListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsListViewModel.h; sourceTree = "<group>"; };
+		C237A5B01F364743001CBECB /* FlightsListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsListViewModel.m; sourceTree = "<group>"; };
+		C237A5B21F3649A1001CBECB /* TrainsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainsListViewController.h; sourceTree = "<group>"; };
+		C237A5B31F3649A1001CBECB /* TrainsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainsListViewController.m; sourceTree = "<group>"; };
+		C237A5B51F3649B2001CBECB /* BusesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusesListViewController.h; sourceTree = "<group>"; };
+		C237A5B61F3649B2001CBECB /* BusesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusesListViewController.m; sourceTree = "<group>"; };
+		C237A5B81F364B72001CBECB /* FlightsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsListViewController.h; sourceTree = "<group>"; };
+		C237A5B91F364B72001CBECB /* FlightsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsListViewController.m; sourceTree = "<group>"; };
+		C237A5BB1F364E94001CBECB /* Transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transport.h; sourceTree = "<group>"; };
+		C237A5BC1F364E94001CBECB /* Transport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transport.m; sourceTree = "<group>"; };
+		C237A5C01F370ACB001CBECB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C237A5C31F370BE1001CBECB /* TransportTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportTest.swift; sourceTree = "<group>"; };
+		C23DA5C41F386BFC00027D17 /* EmptySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptySegue.h; sourceTree = "<group>"; };
+		C23DA5C51F386BFC00027D17 /* EmptySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptySegue.m; sourceTree = "<group>"; };
+		C23DA5C71F386C3600027D17 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		C23DA5C81F386C3600027D17 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		C272E4891F37901400858B6B /* TransportCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportCustomTableViewCell.h; sourceTree = "<group>"; };
+		C272E48A1F37901400858B6B /* TransportCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportCustomTableViewCell.m; sourceTree = "<group>"; };
+		CD0FDF34D8B8BB85D34A7531 /* libPods-TravelMateUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelMateUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96B2F52B2442A7CA5390975 /* Pods-TravelMateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMateUITests/Pods-TravelMateUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DFFBADAAAE773E2F09F4EB /* libPods-TravelMate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB2B94D8247FC1C8D143601 /* libPods-TravelMateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +167,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D940251454FBCDE43EABDA5 /* libPods-TravelMateUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C5174E7EE85BF8031FA0FB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DB0FF5778DF5103EE4C4F2D /* Pods-TravelMate.debug.xcconfig */,
+				9CBD41CD494441E17396B2B8 /* Pods-TravelMate.release.xcconfig */,
+				7ECE6A7A7E6E05D2BA6CD00E /* Pods-TravelMateTests.debug.xcconfig */,
+				28E04A01FC0B23D9CA661C58 /* Pods-TravelMateTests.release.xcconfig */,
+				35E23AF32C29E2A2B0A0F197 /* Pods-TravelMateUITests.debug.xcconfig */,
+				D96B2F52B2442A7CA5390975 /* Pods-TravelMateUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C237A5191F35D868001CBECB = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +194,8 @@
 				C237A53E1F35D868001CBECB /* TravelMateTests */,
 				C237A5491F35D868001CBECB /* TravelMateUITests */,
 				C237A5231F35D868001CBECB /* Products */,
+				4C5174E7EE85BF8031FA0FB3 /* Pods */,
+				CA37E4E1FCA10A135B2ACF36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +212,15 @@
 		C237A5241F35D868001CBECB /* TravelMate */ = {
 			isa = PBXGroup;
 			children = (
+				C237A5581F35ED34001CBECB /* General */,
+				C237A5691F35FA39001CBECB /* Repositories */,
+				C237A5591F35ED34001CBECB /* Interactors */,
+				C237A55A1F35ED34001CBECB /* Models */,
+				C237A55B1F35ED34001CBECB /* Services */,
+				C237A55C1F35ED34001CBECB /* ViewModels */,
+				C237A55D1F35ED34001CBECB /* Views */,
 				C237A5281F35D868001CBECB /* AppDelegate.h */,
 				C237A5291F35D868001CBECB /* AppDelegate.m */,
-				C237A52B1F35D868001CBECB /* ViewController.h */,
-				C237A52C1F35D868001CBECB /* ViewController.m */,
-				C237A52E1F35D868001CBECB /* Main.storyboard */,
 				C237A5311F35D868001CBECB /* Assets.xcassets */,
 				C237A5331F35D868001CBECB /* LaunchScreen.storyboard */,
 				C237A5361F35D868001CBECB /* Info.plist */,
@@ -125,6 +240,11 @@
 		C237A53E1F35D868001CBECB /* TravelMateTests */ = {
 			isa = PBXGroup;
 			children = (
+				C237A55E1F35EDDA001CBECB /* Interactors */,
+				C237A55F1F35EDDA001CBECB /* Mocks */,
+				C237A5601F35EDDA001CBECB /* Models */,
+				C237A5611F35EDDA001CBECB /* Repositories */,
+				C237A5621F35EDDA001CBECB /* ViewModels */,
 				C237A53F1F35D868001CBECB /* TravelMateTests.m */,
 				C237A5411F35D868001CBECB /* Info.plist */,
 			);
@@ -140,6 +260,165 @@
 			path = TravelMateUITests;
 			sourceTree = "<group>";
 		};
+		C237A5581F35ED34001CBECB /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5C01F370ACB001CBECB /* Constants.h */,
+				C23DA5C41F386BFC00027D17 /* EmptySegue.h */,
+				C23DA5C51F386BFC00027D17 /* EmptySegue.m */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C237A5591F35ED34001CBECB /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5821F360A3D001CBECB /* DisplayFlights.h */,
+				C237A5831F360A3D001CBECB /* DisplayFlights.m */,
+				C237A5851F360A54001CBECB /* DisplayFlightsProtocol.h */,
+				C237A5881F362533001CBECB /* DisplayBuses.h */,
+				C237A5891F362533001CBECB /* DisplayBuses.m */,
+				C237A58B1F362547001CBECB /* DisplayBusesProtocol.h */,
+				C237A58C1F36255E001CBECB /* DisplayTrains.h */,
+				C237A58D1F36255E001CBECB /* DisplayTrains.m */,
+				C237A58F1F362573001CBECB /* DisplayTrainsProtocol.h */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		C237A55A1F35ED34001CBECB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C237A56D1F35FB2C001CBECB /* City.h */,
+				C237A56E1F35FB2C001CBECB /* City.m */,
+				C237A5BB1F364E94001CBECB /* Transport.h */,
+				C237A5BC1F364E94001CBECB /* Transport.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C237A55B1F35ED34001CBECB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5941F362B44001CBECB /* Network Manager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C237A55C1F35ED34001CBECB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C237A59B1F364376001CBECB /* AllTransportListViewModel.h */,
+				C237A59C1F364376001CBECB /* AllTransportListViewModel.m */,
+				C237A5A91F364713001CBECB /* TrainsListViewModel.h */,
+				C237A5AA1F364713001CBECB /* TrainsListViewModel.m */,
+				C237A5AC1F364727001CBECB /* BusesListViewModel.h */,
+				C237A5AD1F364727001CBECB /* BusesListViewModel.m */,
+				C237A5AF1F364743001CBECB /* FlightsListViewModel.h */,
+				C237A5B01F364743001CBECB /* FlightsListViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C237A55D1F35ED34001CBECB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C237A52E1F35D868001CBECB /* Main.storyboard */,
+				C237A5981F36433C001CBECB /* AllTransportListViewController.h */,
+				C237A5991F36433C001CBECB /* AllTransportListViewController.m */,
+				C23DA5C71F386C3600027D17 /* ContainerViewController.h */,
+				C23DA5C81F386C3600027D17 /* ContainerViewController.m */,
+				C237A5B21F3649A1001CBECB /* TrainsListViewController.h */,
+				C237A5B31F3649A1001CBECB /* TrainsListViewController.m */,
+				C237A5B51F3649B2001CBECB /* BusesListViewController.h */,
+				C237A5B61F3649B2001CBECB /* BusesListViewController.m */,
+				C237A5B81F364B72001CBECB /* FlightsListViewController.h */,
+				C237A5B91F364B72001CBECB /* FlightsListViewController.m */,
+				C272E4891F37901400858B6B /* TransportCustomTableViewCell.h */,
+				C272E48A1F37901400858B6B /* TransportCustomTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C237A55E1F35EDDA001CBECB /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5801F360823001CBECB /* DisplayFlightsTest.swift */,
+				C237A5861F361149001CBECB /* DisplayBusesTest.swift */,
+				C237A5901F36287A001CBECB /* DisplayTrainsTest.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		C237A55F1F35EDDA001CBECB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C237A5601F35EDDA001CBECB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5921F3629E6001CBECB /* CityTest.swift */,
+				C237A5C31F370BE1001CBECB /* TransportTest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C237A5611F35EDDA001CBECB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5751F360585001CBECB /* BusesRepositoryTest.swift */,
+				C237A5701F3603F2001CBECB /* FlightsRepositoryTest.swift */,
+				C237A5671F35F8D4001CBECB /* TrainsRepositoryTest.swift */,
+				C237A5661F35F8D3001CBECB /* TravelMateTests-Bridging-Header.h */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C237A5621F35EDDA001CBECB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C237A5691F35FA39001CBECB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C237A56A1F35FA5A001CBECB /* TrainsRepository.h */,
+				C237A56B1F35FA5A001CBECB /* TrainsRepository.m */,
+				C237A57D1F360653001CBECB /* TrainsRepositoryProtocol.h */,
+				C237A5721F3604E9001CBECB /* FlightsRepository.h */,
+				C237A5731F3604E9001CBECB /* FlightsRepository.m */,
+				C237A57E1F3606C1001CBECB /* FlightsRepositoryProtocol.h */,
+				C237A5771F3605E0001CBECB /* BusesRepository.h */,
+				C237A5781F3605E0001CBECB /* BusesRepository.m */,
+				C237A57F1F3606D9001CBECB /* BusesRepositoryProtocol.h */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C237A5941F362B44001CBECB /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C237A5951F362B5F001CBECB /* NetworkManager.h */,
+				C237A5961F362B5F001CBECB /* NetworkManager.m */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		CA37E4E1FCA10A135B2ACF36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B984335C498FD842919386D8 /* libPods-TravelMate.a */,
+				03FF42496F36D4E4355921AF /* libPods-TravelMateTests.a */,
+				CD0FDF34D8B8BB85D34A7531 /* libPods-TravelMateUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +426,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C237A54F1F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMate" */;
 			buildPhases = (
+				7FBD3C17B6969B2E82C893C7 /* [CP] Check Pods Manifest.lock */,
 				C237A51E1F35D868001CBECB /* Sources */,
 				C237A51F1F35D868001CBECB /* Frameworks */,
 				C237A5201F35D868001CBECB /* Resources */,
+				1B7B9925C5476F5BD9D26BAC /* [CP] Embed Pods Frameworks */,
+				DCA8380BF3E6D05ADE599DAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +446,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C237A5521F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateTests" */;
 			buildPhases = (
+				27E44928A2FEEC0A2FEAEFC5 /* [CP] Check Pods Manifest.lock */,
 				C237A5371F35D868001CBECB /* Sources */,
 				C237A5381F35D868001CBECB /* Frameworks */,
 				C237A5391F35D868001CBECB /* Resources */,
+				B5510BDDEAECDEC1A9B3C407 /* [CP] Embed Pods Frameworks */,
+				521062B6B837D104D54BE6AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +467,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C237A5551F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateUITests" */;
 			buildPhases = (
+				DA08DC53C4324C6AC558B0F9 /* [CP] Check Pods Manifest.lock */,
 				C237A5421F35D868001CBECB /* Sources */,
 				C237A5431F35D868001CBECB /* Frameworks */,
 				C237A5441F35D868001CBECB /* Resources */,
+				D2D648A6F58D6BB7246116C4 /* [CP] Embed Pods Frameworks */,
+				B37AF1D654101238CE20CB6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +501,7 @@
 					C237A53A1F35D868001CBECB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = M37JW29G64;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C237A5211F35D868001CBECB;
 					};
@@ -271,14 +560,171 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B7B9925C5476F5BD9D26BAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelMate/Pods-TravelMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27E44928A2FEEC0A2FEAEFC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		521062B6B837D104D54BE6AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelMateTests/Pods-TravelMateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FBD3C17B6969B2E82C893C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B37AF1D654101238CE20CB6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelMateUITests/Pods-TravelMateUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5510BDDEAECDEC1A9B3C407 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelMateTests/Pods-TravelMateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2D648A6F58D6BB7246116C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelMateUITests/Pods-TravelMateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA08DC53C4324C6AC558B0F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA8380BF3E6D05ADE599DAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelMate/Pods-TravelMate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C237A51E1F35D868001CBECB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C237A52D1F35D868001CBECB /* ViewController.m in Sources */,
+				C237A56F1F35FB2C001CBECB /* City.m in Sources */,
+				C237A5B71F3649B2001CBECB /* BusesListViewController.m in Sources */,
+				C237A5BA1F364B72001CBECB /* FlightsListViewController.m in Sources */,
+				C237A5B41F3649A1001CBECB /* TrainsListViewController.m in Sources */,
 				C237A52A1F35D868001CBECB /* AppDelegate.m in Sources */,
+				C237A59A1F36433C001CBECB /* AllTransportListViewController.m in Sources */,
+				C23DA5C61F386BFC00027D17 /* EmptySegue.m in Sources */,
+				C237A58A1F362533001CBECB /* DisplayBuses.m in Sources */,
+				C237A5BD1F364E94001CBECB /* Transport.m in Sources */,
+				C272E48B1F37901400858B6B /* TransportCustomTableViewCell.m in Sources */,
+				C237A5971F362B5F001CBECB /* NetworkManager.m in Sources */,
+				C237A5B11F364743001CBECB /* FlightsListViewModel.m in Sources */,
+				C237A5841F360A3D001CBECB /* DisplayFlights.m in Sources */,
 				C237A5271F35D868001CBECB /* main.m in Sources */,
+				C237A5AE1F364727001CBECB /* BusesListViewModel.m in Sources */,
+				C237A5AB1F364713001CBECB /* TrainsListViewModel.m in Sources */,
+				C237A5741F3604E9001CBECB /* FlightsRepository.m in Sources */,
+				C237A59D1F364376001CBECB /* AllTransportListViewModel.m in Sources */,
+				C23DA5C91F386C3600027D17 /* ContainerViewController.m in Sources */,
+				C237A56C1F35FA5A001CBECB /* TrainsRepository.m in Sources */,
+				C237A58E1F36255E001CBECB /* DisplayTrains.m in Sources */,
+				C237A5791F3605E0001CBECB /* BusesRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +732,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C237A5711F3603F2001CBECB /* FlightsRepositoryTest.swift in Sources */,
+				C237A5911F36287A001CBECB /* DisplayTrainsTest.swift in Sources */,
+				C237A5931F3629E6001CBECB /* CityTest.swift in Sources */,
+				C237A5681F35F8D4001CBECB /* TrainsRepositoryTest.swift in Sources */,
+				C237A5811F360823001CBECB /* DisplayFlightsTest.swift in Sources */,
+				C237A5C41F370BE1001CBECB /* TransportTest.swift in Sources */,
+				C237A5871F361149001CBECB /* DisplayBusesTest.swift in Sources */,
+				C237A5761F360585001CBECB /* BusesRepositoryTest.swift in Sources */,
 				C237A5401F35D868001CBECB /* TravelMateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +774,7 @@
 				C237A52F1F35D868001CBECB /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C237A5331F35D868001CBECB /* LaunchScreen.storyboard */ = {
@@ -425,10 +880,13 @@
 		};
 		C237A5501F35D868001CBECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB0FF5778DF5103EE4C4F2D /* Pods-TravelMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = TravelMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,10 +895,13 @@
 		};
 		C237A5511F35D868001CBECB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CBD41CD494441E17396B2B8 /* Pods-TravelMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = TravelMate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,32 +910,42 @@
 		};
 		C237A5531F35D868001CBECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECE6A7A7E6E05D2BA6CD00E /* Pods-TravelMateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = TravelMateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelMateTests/Repositories/TravelMateTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelMate.app/TravelMate";
 			};
 			name = Debug;
 		};
 		C237A5541F35D868001CBECB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E04A01FC0B23D9CA661C58 /* Pods-TravelMateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = TravelMateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.TravelMateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelMateTests/Repositories/TravelMateTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelMate.app/TravelMate";
 			};
 			name = Release;
 		};
 		C237A5561F35D868001CBECB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E23AF32C29E2A2B0A0F197 /* Pods-TravelMateUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = TravelMateUITests/Info.plist;
@@ -487,6 +958,7 @@
 		};
 		C237A5571F35D868001CBECB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96B2F52B2442A7CA5390975 /* Pods-TravelMateUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = TravelMateUITests/Info.plist;
@@ -516,6 +988,7 @@
 				C237A5511F35D868001CBECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C237A5521F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +997,7 @@
 				C237A5541F35D868001CBECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C237A5551F35D868001CBECB /* Build configuration list for PBXNativeTarget "TravelMateUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +1006,7 @@
 				C237A5571F35D868001CBECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
