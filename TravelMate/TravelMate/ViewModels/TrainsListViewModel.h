@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "DisplayTrainsProtocol.h"
+#import "Constants.h"
 
 @interface TrainsListViewModel : NSObject
 
@@ -26,6 +27,10 @@
 
 - (NSString *)numberOfStopsAtIndexPath:(NSIndexPath *)indexPath;
 
+- (NSString *)timeDurationBetweenArrivalAndDepartureAtIndexPath:(NSIndexPath *)indexPath;
+
 - (void)fetchTrainsBetweenSource:(City *)source andDestination:(City *)destination reload:(void(^)())block;
+
+- (void)sortOrderOfTrainsByOption:(SortOptions)option reload:(void(^)())block;
 
 @end

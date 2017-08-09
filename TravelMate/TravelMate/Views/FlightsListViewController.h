@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "City.h"
+#import "Constants.h"
 
 @interface FlightsListViewController : UITableViewController
 
 @property (nonatomic, strong) City *sourceCity;
 @property (nonatomic, strong) City *destinationCity;
+
+- (void)sortOrderBy:(SortOptions)option;
 
 @end

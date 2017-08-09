@@ -13,4 +13,6 @@
 
 - (void)displayViewControllerForTransportMode:(TransportModes)mode;
 
+- (void)sortOrderBy:(SortOptions)option;
+
 @end

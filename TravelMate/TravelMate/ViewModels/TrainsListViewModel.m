@@ -12,6 +12,7 @@
 #import "City.h"
 #import "Constants.h"
 #import "Transport.h"
+#import "NSString+Extra.h"
 
 @interface TrainsListViewModel()
 
@@ -45,19 +46,32 @@
 }
 
 - (NSURL *)providerLogoUrlAtIndexPath:(NSIndexPath *)indexPath {
-    return [NSURL URLWithString:((Transport *)[self.trainsList objectAtIndex:indexPath.row]).providerLogo];
+    NSString *providerLogo = ((Transport *)[self.trainsList objectAtIndex:indexPath.row]).providerLogo;
+    
+    return [NSURL URLWithString:[providerLogo stringByReplacingOccurrencesOfString:@"{size}" withString:@"63"]];
 }
 
 - (NSString *)priceAtIndexPath:(NSIndexPath *)indexPath {
-    return [NSString stringWithFormat:@"€ %@",((Transport *)[self.trainsList objectAtIndex:indexPath.row]).priceInEuros];
+    return [NSString stringWithFormat:@"€ %.2f",[((Transport *)[self.trainsList objectAtIndex:indexPath.row]).priceInEuros floatValue]];
 }
 
 - (NSString *)trainTimingsAtIndexPath:(NSIndexPath *)indexPath {
-    return [NSString stringWithFormat:@"%@ - %@",((Transport *)[self.trainsList objectAtIndex:indexPath.row]).departureTime,((Transport *)[self.trainsList objectAtIndex:indexPath.row]).arrivalTime];
+    NSString *departure = ((Transport *)[self.trainsList objectAtIndex:indexPath.row]).departureTime;
+    
+    NSString *arrival = ((Transport *)[self.trainsList objectAtIndex:indexPath.row]).arrivalTime;
+    
+    return [NSString timingsStringFromDepartureTime:departure andArrivalTime:arrival];
+}
+
+- (NSString *)timeDurationBetweenArrivalAndDepartureAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *departure = ((Transport *)[self.trainsList objectAtIndex:indexPath.row]).departureTime;
+    
+    NSString *arrival = ((Transport *)[self.trainsList objectAtIndex:indexPath.row]).arrivalTime;
+    
+    return [NSString durationBetweenDepartureTime:departure andArrivalTime:arrival];
 }
 
 - (NSString *)numberOfStopsAtIndexPath:(NSIndexPath *)indexPath{
-    
     int numberOfStop = ((Transport *)[self.trainsList objectAtIndex:indexPath.row]).nummberOfStops;
     
     if (numberOfStop == 0) {
@@ -74,6 +88,43 @@
         block();
     }];
 
+}
+
+- (void)sortOrderOfTrainsByOption:(SortOptions)option reload:(void(^)())block {
+    switch (option) {
+        case arrivalTime:{
+            [self.trainsList sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+                Transport *transport1 = (Transport *)obj1;
+                Transport *transport2 = (Transport *)obj2;
+                
+                return [transport1.arrivalTime compareWithTime:transport2.arrivalTime];
+            }];
+            break;
+        }
+        case departureTime:{
+            [self.trainsList sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+                Transport *transport1 = (Transport *)obj1;
+                Transport *transport2 = (Transport *)obj2;
+                
+                return [transport1.departureTime compareWithTime:transport2.departureTime];
+            }];
+            break;
+        }
+        case duration:{
+            [self.trainsList sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+                Transport *transport1 = (Transport *)obj1;
+                Transport *transport2 = (Transport *)obj2;
+                
+                NSString *durationTransport1 = [NSString durationBetweenDepartureTime:transport1.departureTime andArrivalTime:transport1.arrivalTime];
+                
+                NSString *durationTransport2 = [NSString durationBetweenDepartureTime:transport2.departureTime andArrivalTime:transport2.arrivalTime];
+                
+                return [durationTransport1 compareWithTime:durationTransport2];
+            }];
+            break;
+        }
+    }
+    block();
 }
 
 @end

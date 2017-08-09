@@ -15,28 +15,28 @@
     self = [super init];
     
     if (self && transportDictionary.count > 0){
-        if ([transportDictionary objectForKey:kTransport_ID]){
-            self.transportId = [[transportDictionary objectForKey:kTransport_ID] intValue];
+        if ([transportDictionary valueForKey:kTransport_ID]){
+            self.transportId = [[transportDictionary valueForKey:kTransport_ID] intValue];
         }
         
-        if ([transportDictionary objectForKey:kProvider_Logo]){
-            self.providerLogo = [transportDictionary objectForKey:kProvider_Logo];
+        if ([transportDictionary valueForKey:kProvider_Logo]){
+            self.providerLogo = [transportDictionary valueForKey:kProvider_Logo];
         }
         
-        if ([transportDictionary objectForKey:kPrice_In_Euros]){
-            self.priceInEuros = [transportDictionary objectForKey:kPrice_In_Euros];
+        if ([transportDictionary valueForKey:kPrice_In_Euros]){
+            self.priceInEuros = [transportDictionary valueForKey:kPrice_In_Euros];
         }
         
-        if ([transportDictionary objectForKey:kDeparture_Time]){
-            self.departureTime = [transportDictionary objectForKey:kDeparture_Time];
+        if ([transportDictionary valueForKey:kDeparture_Time]){
+            self.departureTime = [transportDictionary valueForKey:kDeparture_Time];
         }
         
-        if ([transportDictionary objectForKey:kArrival_Time]){
-            self.arrivalTime = [transportDictionary objectForKey:kArrival_Time];
+        if ([transportDictionary valueForKey:kArrival_Time]){
+            self.arrivalTime = [transportDictionary valueForKey:kArrival_Time];
         }
         
-        if ([transportDictionary objectForKey:kArrival_Time]){
-            self.nummberOfStops = [[transportDictionary objectForKey:kNummber_Of_Stops] intValue];
+        if ([transportDictionary valueForKey:kNummber_Of_Stops]){
+            self.nummberOfStops = [[transportDictionary valueForKey:kNummber_Of_Stops] intValue];
         }
     }
     

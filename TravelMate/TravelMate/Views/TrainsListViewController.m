@@ -22,14 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self setupViewModel];
     [self.viewModel fetchTrainsBetweenSource:self.sourceCity andDestination:self.destinationCity reload:^{
-        [self.tableView reloadData];
+        [self sortOrderBy:departureTime];
     }];
 }
 
@@ -38,17 +33,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)sortOrderBy:(SortOptions )option {
+    [self.viewModel sortOrderOfTrainsByOption:option reload:^{
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+    }];
+}
+
 #pragma mark - Private Methods -
 -(void)setupViewModel {
     self.viewModel = [TrainsListViewModel create];
 }
 
 - (void)configureCell:(TransportCustomTableViewCell * )cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    
     [cell.providerLogoImageView sd_setImageWithURL:[self.viewModel providerLogoUrlAtIndexPath:indexPath] placeholderImage:[UIImage imageNamed:@"train"]];
     [cell.priceLabel setText:[self.viewModel priceAtIndexPath:indexPath]];
     [cell.timingsLabel setText:[self.viewModel trainTimingsAtIndexPath:indexPath]];
     [cell.numberOfStopLabel setText:[self.viewModel numberOfStopsAtIndexPath:indexPath]];
+    [cell.travelTimeLabel setText:[self.viewModel timeDurationBetweenArrivalAndDepartureAtIndexPath:indexPath]];
 }
 
 #pragma mark - Table view data source

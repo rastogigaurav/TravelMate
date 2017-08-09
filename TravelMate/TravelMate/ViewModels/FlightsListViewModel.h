@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "DisplayFlightsProtocol.h"
+#import "Constants.h"
 
 @class Transport;
 
@@ -24,10 +25,14 @@
 
 - (NSString *)priceAtIndexPath:(NSIndexPath *)indexPath;
 
-- (NSString *)trainTimingsAtIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)flightTimingsAtIndexPath:(NSIndexPath *)indexPath;
 
 - (NSString *)numberOfStopsAtIndexPath:(NSIndexPath *)indexPath;
 
+- (NSString *)timeDurationBetweenArrivalAndDepartureAtIndexPath:(NSIndexPath *)indexPath;
+
 - (void)fetchFlightsBetweenSource:(City *)source andDestination:(City *)destination reload:(void(^)())block;
+
+- (void)sortOrderOfFlightsByOption:(SortOptions)option reload:(void(^)())block;
 
 @end

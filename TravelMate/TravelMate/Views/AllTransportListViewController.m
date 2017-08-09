@@ -7,18 +7,17 @@
 //
 
 #import "AllTransportListViewController.h"
-#import "AllTransportListViewModel.h"
 #import "ContainerViewController.h"
 #import "TrainsListViewController.h"
 #import "BusesListViewController.h"
 #import "FlightsListViewController.h"
 #import "Constants.h"
-#import <ActionSheetPicker.h>
+#import "ActionSheetPicker.h"
 
 @interface AllTransportListViewController ()
 
-@property (nonatomic, strong) AllTransportListViewModel *viewModel;
 @property (nonatomic, strong) ContainerViewController *containerViewController;
+@property (nonatomic) NSInteger selectedIndexOutOfSortOptions;
 
 @end
 
@@ -27,8 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self bindViewModel];
+    self.selectedIndexOutOfSortOptions = 1;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,13 +40,24 @@
 }
 
 - (IBAction)didTapSortOrder:(UIBarButtonItem *)sender {
-    [ActionSheetStringPicker showPickerWithTitle:@"Sort Order" rows:[NSArray arrayWithObjects:@"Arrival Time",@"Departure Time",@"Duration", nil] initialSelection:1 target:self successAction:@selector(successMethod) cancelAction:@selector(cancelMethod) origin:sender];
-}
-
--(void)successMethod{
-}
-
--(void)cancelMethod{
+    // Create an array of strings you want to show in the picker:
+    NSArray *options = [NSArray arrayWithObjects:@"Arrival Time", @"Departure Time", @"Duration", nil];
+    
+    __weak AllTransportListViewController *weakSelf = self;
+    
+    [ActionSheetStringPicker showPickerWithTitle:@"Sort"
+                                            rows:options
+                                initialSelection:self.selectedIndexOutOfSortOptions
+                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                           NSLog(@"Picker: %@, Index: %ld, value: %@",
+                                                 picker, (long)selectedIndex, selectedValue);
+                                           self.selectedIndexOutOfSortOptions = selectedIndex;
+                                           [weakSelf.containerViewController sortOrderBy:selectedIndex];
+                                       }
+                                     cancelBlock:^(ActionSheetStringPicker *picker) {
+                                         NSLog(@"Block Picker Canceled");
+                                     }
+                                          origin:sender];
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
@@ -65,11 +74,6 @@
     if ([segue.identifier isEqualToString:@"embedContainer"]) {
         self.containerViewController = segue.destinationViewController;
     }
-}
-
-#pragma mark - Private Methods -
--(void)bindViewModel {
-    self.viewModel = [AllTransportListViewModel new];
 }
 
 /*

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "DisplayBusesProtocol.h"
+#import "Constants.h"
 
 @interface BusesListViewModel : NSObject
 
@@ -22,10 +23,14 @@
 
 - (NSString *)priceAtIndexPath:(NSIndexPath *)indexPath;
 
-- (NSString *)trainTimingsAtIndexPath:(NSIndexPath *)indexPath;
+- (NSString *)busTimingsAtIndexPath:(NSIndexPath *)indexPath;
 
 - (NSString *)numberOfStopsAtIndexPath:(NSIndexPath *)indexPath;
 
+- (NSString *)timeDurationBetweenArrivalAndDepartureAtIndexPath:(NSIndexPath *)indexPath;
+
 - (void)fetchBusesBetweenSource:(City *)source andDestination:(City *)destination reload:(void(^)())block;
+
+- (void)sortOrderOfBusesByOption:(SortOptions)option reload:(void(^)())block;
 
 @end

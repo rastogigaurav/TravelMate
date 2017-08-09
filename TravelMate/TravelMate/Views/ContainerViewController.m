@@ -94,6 +94,18 @@
     }];
 }
 
+- (void)sortOrderBy:(SortOptions)option {
+    if ([self.currentSegueIdentifier isEqualToString:SegueIdentifierTrains]) {
+        [self.trainsListViewController sortOrderBy:option];
+    }
+    else if ([self.currentSegueIdentifier isEqualToString:SegueIdentifierBuses]) {
+        [self.busesListViewController sortOrderBy:option];
+    }
+    else if ([self.currentSegueIdentifier isEqualToString:SegueIdentifierFlights]) {
+        [self.flightsListViewController sortOrderBy:option];
+    }
+}
+
 - (void)displayViewControllerForTransportMode:(TransportModes)mode
 {
     NSLog(@"%s", __PRETTY_FUNCTION__);
@@ -115,16 +127,6 @@
     }
     
     self.transitionInProgress = YES;
-    
-//    if (([self.currentSegueIdentifier isEqualToString:SegueIdentifierFirst]) && self.firstViewController) {
-//        [self swapFromViewController:self.secondViewController toViewController:self.firstViewController];
-//        return;
-//    }
-//    
-//    if (([self.currentSegueIdentifier isEqualToString:SegueIdentifierSecond]) && self.secondViewController) {
-//        [self swapFromViewController:self.firstViewController toViewController:self.secondViewController];
-//        return;
-//    }
     
     [self performSegueWithIdentifier:self.currentSegueIdentifier sender:nil];
 }

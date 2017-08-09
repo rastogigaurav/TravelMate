@@ -18,3 +18,9 @@ typedef NS_ENUM(NSInteger, TransportModes) {
     bus,
     flight
 };
+
+typedef NS_ENUM(NSInteger, SortOptions) {
+    arrivalTime,
+    departureTime,
+    duration
+};

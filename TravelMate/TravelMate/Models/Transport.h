@@ -12,9 +12,9 @@
 
 @property (nonatomic, assign) int transportId;
 @property (nonatomic, strong) NSString *providerLogo;
-@property (nonatomic, assign) NSString *priceInEuros;
-@property (nonatomic, assign) NSString *arrivalTime;
-@property (nonatomic, assign) NSString *departureTime;
+@property (nonatomic, strong) NSString *priceInEuros;
+@property (nonatomic, strong) NSString *arrivalTime;
+@property (nonatomic, strong) NSString *departureTime;
 @property (nonatomic, assign) int nummberOfStops;
 
 - (instancetype)initWithDictionary:(NSDictionary *)transportDictionary;
