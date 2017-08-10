@@ -10,6 +10,10 @@
 		38DFFBADAAAE773E2F09F4EB /* libPods-TravelMate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B984335C498FD842919386D8 /* libPods-TravelMate.a */; };
 		8D940251454FBCDE43EABDA5 /* libPods-TravelMateUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0FDF34D8B8BB85D34A7531 /* libPods-TravelMateUITests.a */; };
 		C20C9C981F3B731900D22DE3 /* NSString+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C9C971F3B731900D22DE3 /* NSString+Extra.m */; };
+		C20C9C9C1F3C3E3A00D22DE3 /* TrainsListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C9C9B1F3C3E3A00D22DE3 /* TrainsListViewModelTest.swift */; };
+		C21BC4621F3C46040013DA62 /* FlightsListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BC4611F3C46040013DA62 /* FlightsListViewModelTest.swift */; };
+		C21BC4661F3C46DF0013DA62 /* BusesListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BC4651F3C46DF0013DA62 /* BusesListViewModelTest.swift */; };
+		C21BC4681F3C47CF0013DA62 /* NSString+ExtraTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BC4671F3C47CF0013DA62 /* NSString+ExtraTest.swift */; };
 		C237A5271F35D868001CBECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5261F35D868001CBECB /* main.m */; };
 		C237A52A1F35D868001CBECB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C237A5291F35D868001CBECB /* AppDelegate.m */; };
 		C237A5301F35D868001CBECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C237A52E1F35D868001CBECB /* Main.storyboard */; };
@@ -74,6 +78,10 @@
 		B984335C498FD842919386D8 /* libPods-TravelMate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelMate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20C9C961F3B731900D22DE3 /* NSString+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extra.h"; sourceTree = "<group>"; };
 		C20C9C971F3B731900D22DE3 /* NSString+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extra.m"; sourceTree = "<group>"; };
+		C20C9C9B1F3C3E3A00D22DE3 /* TrainsListViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainsListViewModelTest.swift; sourceTree = "<group>"; };
+		C21BC4611F3C46040013DA62 /* FlightsListViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightsListViewModelTest.swift; sourceTree = "<group>"; };
+		C21BC4651F3C46DF0013DA62 /* BusesListViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusesListViewModelTest.swift; sourceTree = "<group>"; };
+		C21BC4671F3C47CF0013DA62 /* NSString+ExtraTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+ExtraTest.swift"; sourceTree = "<group>"; };
 		C237A5221F35D868001CBECB /* TravelMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C237A5261F35D868001CBECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C237A5281F35D868001CBECB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,7 +96,7 @@
 		C237A5461F35D868001CBECB /* TravelMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C237A54A1F35D868001CBECB /* TravelMateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelMateUITests.m; sourceTree = "<group>"; };
 		C237A54C1F35D868001CBECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C237A5661F35F8D3001CBECB /* TravelMateTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelMateTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C237A5661F35F8D3001CBECB /* TravelMateTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TravelMateTests-Bridging-Header.h"; path = "Repositories/TravelMateTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		C237A5671F35F8D4001CBECB /* TrainsRepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainsRepositoryTest.swift; sourceTree = "<group>"; };
 		C237A56A1F35FA5A001CBECB /* TrainsRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainsRepository.h; sourceTree = "<group>"; };
 		C237A56B1F35FA5A001CBECB /* TrainsRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainsRepository.m; sourceTree = "<group>"; };
@@ -264,6 +272,7 @@
 				C237A5611F35EDDA001CBECB /* Repositories */,
 				C237A5621F35EDDA001CBECB /* ViewModels */,
 				C237A53F1F35D868001CBECB /* TravelMateTests.m */,
+				C237A5661F35F8D3001CBECB /* TravelMateTests-Bridging-Header.h */,
 				C237A5411F35D868001CBECB /* Info.plist */,
 			);
 			path = TravelMateTests;
@@ -362,6 +371,7 @@
 				C237A5801F360823001CBECB /* DisplayFlightsTest.swift */,
 				C237A5861F361149001CBECB /* DisplayBusesTest.swift */,
 				C237A5901F36287A001CBECB /* DisplayTrainsTest.swift */,
+				C21BC4671F3C47CF0013DA62 /* NSString+ExtraTest.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -388,7 +398,6 @@
 				C237A5751F360585001CBECB /* BusesRepositoryTest.swift */,
 				C237A5701F3603F2001CBECB /* FlightsRepositoryTest.swift */,
 				C237A5671F35F8D4001CBECB /* TrainsRepositoryTest.swift */,
-				C237A5661F35F8D3001CBECB /* TravelMateTests-Bridging-Header.h */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -396,6 +405,9 @@
 		C237A5621F35EDDA001CBECB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C20C9C9B1F3C3E3A00D22DE3 /* TrainsListViewModelTest.swift */,
+				C21BC4611F3C46040013DA62 /* FlightsListViewModelTest.swift */,
+				C21BC4651F3C46DF0013DA62 /* BusesListViewModelTest.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -749,14 +761,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C237A5711F3603F2001CBECB /* FlightsRepositoryTest.swift in Sources */,
+				C21BC4621F3C46040013DA62 /* FlightsListViewModelTest.swift in Sources */,
 				C237A5911F36287A001CBECB /* DisplayTrainsTest.swift in Sources */,
 				C237A5931F3629E6001CBECB /* CityTest.swift in Sources */,
+				C21BC4681F3C47CF0013DA62 /* NSString+ExtraTest.swift in Sources */,
 				C237A5681F35F8D4001CBECB /* TrainsRepositoryTest.swift in Sources */,
+				C21BC4661F3C46DF0013DA62 /* BusesListViewModelTest.swift in Sources */,
 				C237A5811F360823001CBECB /* DisplayFlightsTest.swift in Sources */,
 				C237A5C41F370BE1001CBECB /* TransportTest.swift in Sources */,
 				C237A5871F361149001CBECB /* DisplayBusesTest.swift in Sources */,
 				C237A5761F360585001CBECB /* BusesRepositoryTest.swift in Sources */,
 				C237A5401F35D868001CBECB /* TravelMateTests.m in Sources */,
+				C20C9C9C1F3C3E3A00D22DE3 /* TrainsListViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
