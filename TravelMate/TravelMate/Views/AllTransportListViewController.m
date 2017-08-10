@@ -27,6 +27,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.selectedIndexOutOfSortOptions = 1;
+    
+    self.source = [[City alloc] initWithName:@"Berlin" andCode:@"BRL"];
+    self.destination = [[City alloc] initWithName:@"Munich" andCode:@"MNC"];
+    
+    self.containerViewController.source = self.source;
+    self.containerViewController.destination = self.destination;
+    [self.navigationItem setTitle:[NSString stringWithFormat:@"%@ > %@",self.source.name,self.destination.name]];
 }
 
 - (void)didReceiveMemoryWarning {

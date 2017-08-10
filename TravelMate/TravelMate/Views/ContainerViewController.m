@@ -45,12 +45,18 @@
     // two if statements to get new VC instances instead.
     if ([segue.identifier isEqualToString:SegueIdentifierTrains]) {
         self.trainsListViewController = segue.destinationViewController;
+        self.trainsListViewController.sourceCity = self.source;
+        self.trainsListViewController.destinationCity = self.destination;
     }
     else if ([segue.identifier isEqualToString:SegueIdentifierBuses]) {
         self.busesListViewController = segue.destinationViewController;
+        self.busesListViewController.sourceCity = self.source;
+        self.busesListViewController.destinationCity = self.destination;
     }
     else if ([segue.identifier isEqualToString:SegueIdentifierFlights]) {
         self.flightsListViewController = segue.destinationViewController;
+        self.flightsListViewController.sourceCity = self.source;
+        self.flightsListViewController.destinationCity = self.destination;
     }
     
     // If we're going to the first view controller.
@@ -87,7 +93,7 @@
     [fromViewController willMoveToParentViewController:nil];
     [self addChildViewController:toViewController];
     
-    [self transitionFromViewController:fromViewController toViewController:toViewController duration:0.0 options:UIViewAnimationOptionTransitionCrossDissolve animations:nil completion:^(BOOL finished) {
+    [self transitionFromViewController:fromViewController toViewController:toViewController duration:0.2 options:UIViewAnimationOptionShowHideTransitionViews animations:nil completion:^(BOOL finished) {
         [fromViewController removeFromParentViewController];
         [toViewController didMoveToParentViewController:self];
         self.transitionInProgress = NO;
@@ -108,8 +114,6 @@
 
 - (void)displayViewControllerForTransportMode:(TransportModes)mode
 {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-    
     if (self.transitionInProgress) {
         return;
     }
@@ -127,7 +131,6 @@
     }
     
     self.transitionInProgress = YES;
-    
     [self performSegueWithIdentifier:self.currentSegueIdentifier sender:nil];
 }
 

@@ -129,19 +129,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyU-Za-ZO9" userLabel="Timings Label">
-                                            <rect key="frame" x="8" y="67" width="106" height="0.0"/>
+                                            <rect key="frame" x="8" y="67" width="99.5" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLb-S1-7mx" userLabel="Number of Stops Label">
-                                            <rect key="frame" x="124" y="67" width="106.5" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLb-S1-7mx" userLabel="Number of Stops Label">
+                                            <rect key="frame" x="137.5" y="67" width="99.5" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nU-WP-uRj" userLabel="Travel Time Label">
-                                            <rect key="frame" x="235.5" y="67" width="106.5" height="0.0"/>
+                                            <rect key="frame" x="242" y="67" width="100" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -163,7 +163,7 @@
                                         <constraint firstItem="2nU-WP-uRj" firstAttribute="leading" secondItem="TLb-S1-7mx" secondAttribute="trailing" constant="5" id="tWm-1h-tCH"/>
                                         <constraint firstItem="TLb-S1-7mx" firstAttribute="bottom" secondItem="PyU-Za-ZO9" secondAttribute="bottom" id="uVI-sv-Vla"/>
                                         <constraint firstItem="TLb-S1-7mx" firstAttribute="top" secondItem="PyU-Za-ZO9" secondAttribute="top" id="xrY-NS-zv0"/>
-                                        <constraint firstItem="TLb-S1-7mx" firstAttribute="leading" secondItem="PyU-Za-ZO9" secondAttribute="trailing" constant="10" id="yDH-ar-aZx"/>
+                                        <constraint firstItem="TLb-S1-7mx" firstAttribute="leading" secondItem="PyU-Za-ZO9" secondAttribute="trailing" constant="30" id="yDH-ar-aZx"/>
                                         <constraint firstItem="UPR-hh-wB0" firstAttribute="top" secondItem="TfH-2a-znZ" secondAttribute="topMargin" id="zv5-K6-ej9"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -215,19 +215,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0t-rT-yO3" userLabel="Timings Label">
-                                            <rect key="frame" x="8" y="67" width="106" height="0.0"/>
+                                            <rect key="frame" x="8" y="67" width="99.5" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfc-UV-Ksr" userLabel="Number of Stops Label">
-                                            <rect key="frame" x="124" y="67" width="106.5" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfc-UV-Ksr" userLabel="Number of Stops Label">
+                                            <rect key="frame" x="137.5" y="67" width="99.5" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3G-6b-9Ip" userLabel="Travel Time Label">
-                                            <rect key="frame" x="235.5" y="67" width="106.5" height="0.0"/>
+                                            <rect key="frame" x="242" y="67" width="100" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -236,7 +236,7 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="u3G-6b-9Ip" secondAttribute="trailing" id="1ox-Cb-hj9"/>
                                         <constraint firstItem="raS-hu-CNc" firstAttribute="leading" secondItem="aDH-PL-RgH" secondAttribute="trailing" constant="3" id="27J-m8-QVs"/>
-                                        <constraint firstItem="pfc-UV-Ksr" firstAttribute="leading" secondItem="G0t-rT-yO3" secondAttribute="trailing" constant="10" id="6TQ-M9-dm6"/>
+                                        <constraint firstItem="pfc-UV-Ksr" firstAttribute="leading" secondItem="G0t-rT-yO3" secondAttribute="trailing" constant="30" id="6TQ-M9-dm6"/>
                                         <constraint firstItem="pfc-UV-Ksr" firstAttribute="bottom" secondItem="G0t-rT-yO3" secondAttribute="bottom" id="98P-FZ-cix"/>
                                         <constraint firstItem="u3G-6b-9Ip" firstAttribute="leading" secondItem="pfc-UV-Ksr" secondAttribute="trailing" constant="5" id="9ov-je-er3"/>
                                         <constraint firstAttribute="trailing" secondItem="raS-hu-CNc" secondAttribute="trailing" id="B3V-Ca-hgT"/>
@@ -301,19 +301,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXR-UR-kBI" userLabel="Timings Label">
-                                            <rect key="frame" x="8" y="67" width="106" height="0.0"/>
+                                            <rect key="frame" x="8" y="67" width="99.5" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcg-pp-DIT" userLabel="Number of Stops Label">
-                                            <rect key="frame" x="124" y="67" width="106.5" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcg-pp-DIT" userLabel="Number of Stops Label">
+                                            <rect key="frame" x="137.5" y="67" width="99.5" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5n-gR-68b" userLabel="Travel Time Label">
-                                            <rect key="frame" x="235.5" y="67" width="106.5" height="0.0"/>
+                                            <rect key="frame" x="242" y="67" width="100" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -333,7 +333,7 @@
                                         <constraint firstItem="gXR-UR-kBI" firstAttribute="leading" secondItem="Ore-DD-xuD" secondAttribute="leading" constant="8" id="oNv-Ee-hsr"/>
                                         <constraint firstItem="Zcg-pp-DIT" firstAttribute="bottom" secondItem="gXR-UR-kBI" secondAttribute="bottom" id="pdE-I4-gBA"/>
                                         <constraint firstItem="Zcg-pp-DIT" firstAttribute="top" secondItem="gXR-UR-kBI" secondAttribute="top" id="sEN-y9-by1"/>
-                                        <constraint firstItem="Zcg-pp-DIT" firstAttribute="leading" secondItem="gXR-UR-kBI" secondAttribute="trailing" constant="10" id="wPI-s6-vZT"/>
+                                        <constraint firstItem="Zcg-pp-DIT" firstAttribute="leading" secondItem="gXR-UR-kBI" secondAttribute="trailing" constant="30" id="wPI-s6-vZT"/>
                                         <constraint firstItem="jQk-4f-Abv" firstAttribute="leading" secondItem="Ore-DD-xuD" secondAttribute="leadingMargin" id="wpC-QS-LCb"/>
                                         <constraint firstAttribute="bottom" secondItem="gXR-UR-kBI" secondAttribute="bottom" constant="7.5" id="xsX-MO-nRx"/>
                                         <constraint firstItem="n5n-gR-68b" firstAttribute="top" secondItem="gXR-UR-kBI" secondAttribute="top" id="y44-J1-SB9"/>

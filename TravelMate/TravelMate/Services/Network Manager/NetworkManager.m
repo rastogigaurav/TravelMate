@@ -9,6 +9,12 @@
 #import "NetworkManager.h"
 #import <AFNetworking.h>
 
+@interface NetworkManager()
+
+@property (nonatomic, strong) NSURLConnection *connection;
+
+@end
+
 @implementation NetworkManager
 
 static NetworkManager *sharedInstance = nil;
@@ -25,6 +31,10 @@ static NetworkManager *sharedInstance = nil;
 -(void)get:(NSString *)urlString parameters:(NSDictionary *)parameter withSuccessBlock:(SuccessBlock)success  andFailureBlock:(FailureBlock)failure {
     NSURL *URL = [NSURL URLWithString:urlString];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.requestSerializer = [AFJSONRequestSerializer new];
+    manager.requestSerializer.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
+    
     [manager GET:URL.absoluteString parameters:parameter progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         if (responseObject != nil){
             success(responseObject);
@@ -33,7 +43,6 @@ static NetworkManager *sharedInstance = nil;
         NSLog(@"Error: %@", error);
         failure(error);
     }];
-    
 }
 
 @end

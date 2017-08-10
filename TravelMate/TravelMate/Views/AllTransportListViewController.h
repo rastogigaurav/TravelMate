@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "City.h"
 
 @interface AllTransportListViewController : UIViewController
+
+@property (nonatomic, strong)City *source;
+@property (nonatomic, strong)City *destination;
 
 @end

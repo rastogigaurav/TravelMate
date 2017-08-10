@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
+#import "City.h"
 
 @interface ContainerViewController : UIViewController
+
+@property (nonatomic, strong) City *source;
+@property (nonatomic, strong) City *destination;
 
 - (void)displayViewControllerForTransportMode:(TransportModes)mode;
 
